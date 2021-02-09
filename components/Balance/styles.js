@@ -44,5 +44,5 @@ export const Amount = styled.Text`
 `;
 
 export const BtnVisible = styled.TouchableOpacity`
-  padding: 5px 10px;
+  padding: 5px 5px;
 `;

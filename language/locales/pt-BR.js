@@ -6,7 +6,10 @@ export default {
     button: 'ACESSAR APP',
   },
   Balance: {
-    myBalance: 'Meu saldo:',
+    myBalance: 'Seu saldo em conta:',
     currency: 'R$',
+  },
+  DashboardPage: {
+    welcomeText: 'Olá, {{name}}',
   }
 };
