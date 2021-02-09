@@ -4,5 +4,9 @@ export default {
   },
   HomePage: {
     button: 'ACESSAR APP',
+  },
+  Balance: {
+    myBalance: 'Meu saldo:',
+    currency: 'R$',
   }
 };

@@ -10,14 +10,13 @@ export const Types = {
 };
 
 const initialState = {
-  accountData: [],
+  accountData: {},
   loading: false,
   error: null,
 };
 
-export const fetchAccountData = (token) => ({
+export const fetchAccountData = () => ({
   type: Types.FETCH_ACCOUNT_DATA,
-  token,
 });
 
 export const errorAccountData = (error) => ({
