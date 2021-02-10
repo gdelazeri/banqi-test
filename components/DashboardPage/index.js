@@ -1,11 +1,9 @@
 import React from 'react';
 
 import { Wrapper, WelcomeText } from './styles';
-import {
-  Balance,
-  ActionsBar,
-  PromotionalCard,
-} from '../../components';
+import Balance from '../../components/Balance';
+import ActionsBar from '../../components/ActionsBar';
+import PromotionalCard from '../../components/PromotionalCard';
 import useLanguage from '../../language/useLanguage';
 import IconMoney from '../../assets/icons/money';
 import TransactionsList from '../TransactionsList';
