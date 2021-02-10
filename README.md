@@ -4,7 +4,7 @@ Application that simulates a banking application.
 
 ## Installation
 
-Expo was used cause the project was simple and the development should be fast, then Expo 
+Expo was used cause the project was simple and the development should be fast due to deadline.
 
 ```bash
 npm install -g expo-cli
