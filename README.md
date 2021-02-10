@@ -31,5 +31,5 @@ PS: The Expo should be running with "yarn start"
 
 ## Unit Tests
 
-Unit tests could not be configured because many errors happens on try to run the command **jest**, due to styled-component use.
-The unit tests are written, but we can't run them.
+Unit tests could not be configured because many errors happens on try to run the command **jest**, due to styled-component/native use.
+The unit tests are written in *develop* branch, but we can't run them.
