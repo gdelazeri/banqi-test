@@ -1,5 +1,4 @@
 import React from 'react';
-import { useNavigation } from '@react-navigation/native';
 
 import { Wrapper, WelcomeText } from './styles';
 import {
@@ -9,9 +8,9 @@ import {
 } from '../../components';
 import useLanguage from '../../language/useLanguage';
 import IconMoney from '../../assets/icons/money';
+import TransactionsList from '../TransactionsList';
 
 const DashboardPage = ({ accountData }) => {
-  const navigation = useNavigation();
   const { DashboardPage: DashboardPageStrings } = useLanguage();
 
   return <Wrapper>
@@ -22,6 +21,9 @@ const DashboardPage = ({ accountData }) => {
       icon={IconMoney}
       title={DashboardPageStrings.promotionalTitle}
       subtitle={DashboardPageStrings.promotionalSubtitle}
+    />
+    <TransactionsList
+      transactions={accountData.transactions}
     />
   </Wrapper>;
 }

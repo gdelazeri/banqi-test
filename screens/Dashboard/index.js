@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { useNavigation } from '@react-navigation/native';
 
 import { Wrapper } from './styles';
 import { DashboardPage, PageLoader } from '../../components';

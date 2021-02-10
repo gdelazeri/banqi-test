@@ -1,13 +1,13 @@
 export default {
-  global: {
+  Global: {
     appName: 'banQi',
+    currency: 'R$',
   },
   HomePage: {
     button: 'ACESSAR APP',
   },
   Balance: {
     myBalance: 'Seu saldo em conta:',
-    currency: 'R$',
   },
   DashboardPage: {
     welcomeText: 'Olá, {{name}}',
@@ -21,5 +21,10 @@ export default {
     receipts: 'Comprovantes',
     investments: 'Investimentos',
     recharge: 'Recargas',
+  },
+  TransactionsList: {
+    title: 'Extrato',
+    subtitle: 'Acompanhe suas transações',
+    showMore: 'Ver mais',
   }
 };

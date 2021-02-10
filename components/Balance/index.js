@@ -15,14 +15,14 @@ import IconEye from '../../assets/icons/eye';
 import IconEyeSlash from '../../assets/icons/eyeSlash';
 
 const Balance = ({ amount }) => {
-  const { Balance: BalanceStrings } = useLanguage();
+  const { Balance: BalanceStrings, Global } = useLanguage();
   const [visible, setVisible] = useState(false);
 
   return <Wrapper>
     <Label>{BalanceStrings.myBalance}</Label>
     <WrapperBalance>
       {visible && <WrapperAmount>
-        <AmountCurrency>{BalanceStrings.currency}</AmountCurrency>
+        <AmountCurrency>{Global.currency}</AmountCurrency>
         <Amount>{formatValue(Number(amount))}</Amount>
       </WrapperAmount>}
       {!visible && <WrapperAmount style={{ backgroundColor: '#ddd' }} />}
