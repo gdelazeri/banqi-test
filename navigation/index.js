@@ -4,6 +4,8 @@ import Constants from 'expo-constants';
 
 import Home from '../screens/Home';
 import Dashboard from '../screens/Dashboard';
+import Transaction from '../screens/Transaction';
+import { stackFromBottomOverlay } from './styles';
 
 const Stack = createStackNavigator();
 
@@ -18,6 +20,15 @@ const AppStack = () => {
     >
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="Dashboard" component={Dashboard} />
+      <Stack.Screen
+        name="Transaction"
+        component={Transaction}
+        options={{
+          ...stackFromBottomOverlay(),
+          gestureDirection: 'vertical',
+          gestureEnabled: true,
+        }}
+      />
     </Stack.Navigator>
   );
 };

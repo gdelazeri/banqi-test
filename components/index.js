@@ -6,3 +6,4 @@ export { default as DashboardPage } from './DashboardPage';
 export { default as HomePage } from './HomePage';
 export { default as PageLoader } from './PageLoader';
 export { default as PromotionalCard } from './PromotionalCard';
+export { default as TransactionPage } from './TransactionPage';

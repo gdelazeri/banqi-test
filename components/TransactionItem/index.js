@@ -9,29 +9,19 @@ import {
   Date,
   Amount,
 } from './styles';
-import useLanguage from '../../language/useLanguage';
-import formatValue from '../../utils/formatValue';
 import formatDate from '../../utils/formatDate';
+import formatAmount from '../../utils/formatAmount';
 
-const TransactionItem = ({ description, date, amount }) => {
-  const { Global } = useLanguage();
+const TransactionItem = ({ transaction }) => {
   const navigation = useNavigation();
-
-  const formatAmount = (amount) => {
-    const value = formatValue(Math.abs(Number(amount)));
-    let text = Number(amount) < 0 ? `- ` : '';
-    text += Global.currency + ' ';
-    text += value;
-    return text;
-  }
-
-  return <Wrapper>
+  const amount = Number(transaction.amount);
+  return <Wrapper onPress={() => navigation.navigate('Transaction', { transaction })}>
     <WrapperContent>
       <View>
-        <Description>{description}</Description>
-        <Date>{formatDate(date)}</Date>
+        <Description>{transaction.description}</Description>
+        <Date>{formatDate(transaction.date)}</Date>
       </View>
-      <Amount receive={Number(amount) > 0}>{formatAmount(amount)}</Amount>
+      <Amount receive={amount > 0}>{formatAmount(amount)}</Amount>
     </WrapperContent>
   </Wrapper>
 }

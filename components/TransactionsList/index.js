@@ -30,11 +30,7 @@ const TransactionsList = ({ transactions = [] }) => {
       <>
         {list.map((transaction, index) => <View key={transaction._id}>
           {index > 0 && <Divider />}
-          <TransactionItem
-            description={transaction.description}
-            date={transaction.date}
-            amount={transaction.amount}
-          />
+          <TransactionItem transaction={transaction} />
         </View>)}
 
         {!showAll && transactions.length > list.length && <BtnShowMore onPress={() => setShowAll(true)}>
