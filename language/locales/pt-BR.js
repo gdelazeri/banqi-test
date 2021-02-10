@@ -11,6 +11,8 @@ export default {
   },
   DashboardPage: {
     welcomeText: 'Olá, {{name}}',
+    promotionalTitle: 'Empréstimo pessoal',
+    promotionalSubtitle: 'Você tem R$ 500 pré-aprovados!!!',
   },
   Actions: {
     transfer: 'Transferência',

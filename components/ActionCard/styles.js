@@ -8,7 +8,7 @@ export const Wrapper = styled.TouchableOpacity`
   margin: 0px 5px;
   justify-content: space-between;
   background-color: ${({ theme }) => theme.colors.whiteText};
-  box-shadow: 2px 2px rgba(170, 170, 170, 0.2);
+  box-shadow: 2px 2px 3px rgba(170, 170, 170, 0.3);
 `;
 
 export const Label = styled.Text`
