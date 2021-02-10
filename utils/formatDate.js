@@ -1,4 +1,4 @@
-const formatDate = (dateString, time = false) => {
+const formatDate = (dateString) => {
   if (!dateString) {
     return '';
   }
@@ -8,11 +8,6 @@ const formatDate = (dateString, time = false) => {
   const y = date.getFullYear();
   const fDate = `${d < 10 ? `0${d}` : d}/${m < 10 ? `0${m}` : m}/${y.toString().substr(2, 2)}`;
 
-  if (time) {
-    const hours = date.getUTCHours();
-    const minutes = date.getMinutes();
-    return `${fDate} ${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}`;
-  }
   return fDate;
 };
 

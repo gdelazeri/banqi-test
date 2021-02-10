@@ -26,5 +26,8 @@ export default {
     title: 'Extrato',
     subtitle: 'Acompanhe suas transações',
     showMore: 'Ver mais',
+  },
+  TransactionPage: {
+    datetime: 'Dia {{date}} às {{time}}',
   }
 };
