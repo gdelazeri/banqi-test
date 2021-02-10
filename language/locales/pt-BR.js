@@ -11,5 +11,13 @@ export default {
   },
   DashboardPage: {
     welcomeText: 'Olá, {{name}}',
+  },
+  Actions: {
+    transfer: 'Transferência',
+    receive: 'Sacar',
+    deposit: 'Depositar',
+    receipts: 'Comprovantes',
+    investments: 'Investimentos',
+    recharge: 'Recargas',
   }
 };

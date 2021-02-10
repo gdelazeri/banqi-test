@@ -1,3 +1,5 @@
+export { default as ActionsBar } from './ActionsBar';
+export { default as ActionCard } from './ActionCard';
 export { default as Balance } from './Balance';
 export { default as Button } from './Button';
 export { default as DashboardPage } from './DashboardPage';
