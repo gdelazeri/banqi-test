@@ -12,7 +12,7 @@ export const Wrapper = styled.TouchableOpacity`
 `;
 
 export const Label = styled.Text`
-  color: ${({ theme }) => theme.colors.text};
+  color: ${({ theme }) => theme.colors.textLight};
   font-size: 18px;
   font-family: ${({ theme }) => theme.fonts.bold};
 `;
